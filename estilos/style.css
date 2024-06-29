@@ -2,3 +2,126 @@
 
 /* verde #49a09d
 lilás #5f2c82 */
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    background-color: white;
+
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+}
+
+#login > #img {
+    background: #5f2c82 url('../img/pexels-lawlesscapture-13737660.jpg');
+    background-size: cover;
+    height: 200px;
+    display: block;
+}
+
+#login > #form {
+    display: block;
+    padding: 10px;
+
+}
+
+#form > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#form > p {
+    font-size: 0.8em;
+}
+
+form > .campo {
+    background-color: #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 5px;
+}
+
+.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+form > input[type=submit]:hover {
+    background-color: #5ac5c2;
+}
+
+form > .bottom {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    padding-top: 5px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+
+}
+
+form > .bottom:hover {
+    background-color: #5ac5c2;
+}
+
+form > .bottom > span {
+    font-size: 0.8em;
+}
+
+form > .campo > span {
+    color: white;
+    font-size: 1.2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo > input {
+    background-color: #49a09d;
+    height: 100%;
+    width: calc(100% - 48px);
+}
